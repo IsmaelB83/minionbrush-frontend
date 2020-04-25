@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
+    <link rel='stylesheet' type='text/css' href='./fontawesome/css/all.css'>
+    <link rel='stylesheet' href='./styles.css'>
+    <link rel='stylesheet' href='./detail.css'>
+    <title>Minionbrush - Dark talons</title>
+</head>
+<body>
+    <div class='Wrapper'>
+
+        <div class='SidePanel'>
+            <div class='SidePanel__Brand'>
+                <a href="index.html">
+                    <img src='./images/icon.png' alt='brand'>
+                </a>
+            </div>
+            <div class='SidePanel__Menu'>
+                <ul class='MenuList'>
+                    <li class='MenuList__Item'>
+                        <a class='MenuList__Link' href='index.html'>
+                            <span><i class='far fa-user-circle MenuList__ItemIcon'></i>Profile</span>
+                        </a>
+                    </li>
+                    <li class='MenuList__Item'>
+                        <a class='MenuList__Link' href='index.html'>
+                            <span><i class='far fa-comments MenuList__ItemIcon'></i>Messages</span>
+                        </a>
+                    </li>
+                    <li class='MenuList__Item'>
+                        <a class='MenuList__Link' href='index.html'>
+                            <span><i class='fas fa-users MenuList__ItemIcon'></i>Friends</span>
+                        </a>
+                    </li>
+                    <li class='MenuList__Item'>
+                        <a class='MenuList__Link' href='index.html'>
+                            <span><i class='fas fa-dollar-sign MenuList__ItemIcon'></i>Customers</span>
+                        </a>
+                    </li>
+                    <li class='MenuList__Item'>
+                        <a class='MenuList__Link MenuList__Link--active' href='detail.html'>
+                            <span><i class='fas fa-paint-brush MenuList__ItemIcon'></i>WIP</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class='SubmenuList'>
+                            <li class='SubmenuList__Item'>
+                                <a class='SubmenuList__Link' href='detail.html'>
+                                    <span><i class="far fa-star MenuList__ItemIcon"></i>Dark talon</span>
+                                </a>
+                            </li>
+                            <li class='SubmenuList__Item'>
+                                <a class='SubmenuList__Link' href='detail.html'>
+                                    <span><i class="far fa-star MenuList__ItemIcon"></i>Imperial Knight</span>
+                                </a>
+                            </li>
+                            <li class='SubmenuList__Item'>
+                                <a class='SubmenuList__Link' href='detail.html'>
+                                    <span><i class="far fa-star MenuList__ItemIcon"></i>Bike ravenwing</span>
+                                </a>
+                            </li>
+                            <li class='SubmenuList__Item'>
+                                <a class='SubmenuList__Link' href='detail.html'>
+                                    <span><i class="far fa-star MenuList__ItemIcon"></i>Sammael</span>
+                                </a>
+                            </li>
+                            <li class='SubmenuList__Item'>
+                                <a class='SubmenuList__Link' href='detail.html'>
+                                    <span><i class="fas fa-ellipsis-h MenuList__ItemIcon"></i>See all</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='MenuList__Item'>
+                        <a class='MenuList__Link' href='detail.html'>
+                            <span><i class='fas fa-check MenuList__ItemIcon'></i>DONE</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='MainPanel'>
+            <div class='MainPanel__NavBar'>
+                <div class='Search'>
+                    <input class='SearchInput' type='text' name='seach' id='search' placeholder='search'>
+                    <i class='fas fa-search SearchIcon'></i>
+                </div>
+                <div class='Avatar'>
+                    <img class='Avatar__Img' src='./images/avatar.jpg' alt='avatar'>
+                    <p class='Avatar__Name'>Demon Artist</p>
+                </div>
+            </div>
+            <div class='MainPanel__Main'>
+
+                <div class="DetailWork">
+
+                    <div class="DetailWork__Header">
+                        <div class='DetailWork__HeaderImage'>
+                            <img src="./images/darktalon.jpg" alt="work_image">
+                        </div>
+                        <div class='DetailWork__HeaderData'>
+                            <h2>Ravenwing Dark Talon</h2>
+                            <span><i class="far fa-clock"></i> 115'</span>
+                            <p>IN PROGRESS</p>        
+                        </div>
+                        <div class='DetailWork__HeaderArtist'>
+                            <img src="./images/artist.jpeg" alt="work_image">
+                            <div class='DetailWork_HeaderArtistName'>
+                                <p>Painted by </p>
+                                <p>Chen Leung</p>
+                            </div>
+                        </div>
+                    </div>   
+                                
+                    <div class="DetailWork__Steps">
+                        <ol class='StepList'>
+                            <li class='StepList__Step'>
+                                <span class='StepList__Number'>1</span>
+                                <div class='StepList__Data'>
+                                    <p class='StepList__Name'>Imprimación</p>
+                                    <span class='StepList__Time'>3'</span>
+                                </div>
+                            </li>
+                            <li class='StepList__Step'>
+                                <span class='StepList__Number'>2</span>
+                                <div class='StepList__Data'>
+                                    <p class='StepList__Name'>Capa base</p>
+                                    <span class='StepList__Time'>5'</span>
+                                </div>
+                            </li>
+                            <li class='StepList__Step'>
+                                <span class='StepList__Number'>3</span>
+                                <div class='StepList__Data'>
+                                    <p class='StepList__Name'>Primeras luces</p>
+                                    <span class='StepList__Time'>20'</span>
+                                </div>
+                            </li>
+                            <li class='StepList__Step'>
+                                <span class='StepList__Number'>4</span>
+                                <div class='StepList__Data'>
+                                    <p class='StepList__Name'>Detalles</p>
+                                    <span class='StepList__Time'>60'</span>
+                                </div>
+                            </li>
+                            <li class='StepList__Step'>
+                                <span class='StepList__Number'>5</span>
+                                <div class='StepList__Data'>
+                                    <p class='StepList__Name'>Pigmentos</p>
+                                    <span class='StepList__Time'>30'</span>
+                                </div>
+                            </li>
+                            <li class='StepList__Step'>
+                                <span class='StepList__Number'>5</span>
+                                <div class='StepList__Data'>
+                                    <p class='StepList__Name'>Barnizado</p>
+                                    <span class='StepList__Time'>30'</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="DetailWork__Gallery">
+                        <img src="./images/stepbystep/1.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/2.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/3.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/4.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/5.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/6.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/7.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/5.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/6.jpg" alt="stepbystep">
+                        <img src="./images/stepbystep/7.jpg" alt="stepbystep">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
