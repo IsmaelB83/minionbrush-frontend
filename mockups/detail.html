@@ -107,7 +107,10 @@
                         <div class='DetailWork__HeaderData'>
                             <h2>Ravenwing Dark Talon</h2>
                             <span><i class="far fa-clock"></i> 115'</span>
-                            <p>IN PROGRESS</p>        
+                            <div class='DetailWork__Progress'>
+                                <progress max="100" value="80"></progress>
+                                <span>80%</span>
+                            </div>
                         </div>
                         <div class='DetailWork__HeaderArtist'>
                             <img src="./images/artist.jpeg" alt="work_image">
@@ -120,46 +123,83 @@
                                 
                     <div class="DetailWork__Steps">
                         <ol class='StepList'>
-                            <li class='StepList__Step'>
-                                <span class='StepList__Number'>1</span>
-                                <div class='StepList__Data'>
-                                    <p class='StepList__Name'>Imprimación</p>
-                                    <span class='StepList__Time'>3'</span>
+                            <li class='StepList_Item'>
+                                <div class='StepList__Summary'>
+                                    <span class='StepList__Number'>1</span>
+                                    <div class='StepList__Data'>
+                                        <p class='StepList__Name'>Imprimación</p>
+                                        <span class='StepList__Time'>3'</span>
+                                    </div>
                                 </div>
                             </li>
-                            <li class='StepList__Step'>
-                                <span class='StepList__Number'>2</span>
-                                <div class='StepList__Data'>
-                                    <p class='StepList__Name'>Capa base</p>
-                                    <span class='StepList__Time'>5'</span>
+                            <li class='StepList_Item StepList_Item--active'>
+                                <div class='StepList__Summary'>
+                                    <span class='StepList__Number'>2</span>
+                                    <div class='StepList__Data'>
+                                        <p class='StepList__Name'>Capa base</p>
+                                        <span class='StepList__Time'>5'</span>
+                                    </div>
+                                </div>
+                                <div class='StepList__StepDetail'>
+                                    <div class='StepList__StepDescription'>
+                                        <img src="./images/icons/airbrush.png" alt="iconostep">
+                                        <div class='StepList__StepDescriptionAndList'>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus debitis facere corporis perferendis asperiores! Voluptatum inventore officiis animi accusamus debitis ex maiores unde ratione, rerum aliquam facere dolore laboriosam iste.</p>
+                                            <ul class='StepList__ImportantActions'>
+                                                <li>
+                                                    <span><i class="fas fa-shoe-prints"></i>3 layers</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fas fa-ruler-vertical"></i>0.4 mm needle</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fas fa-wind"></i>1.5 bares pressure</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fas fa-water"></i>50/50 paint and diluyent</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class='StepList__StepMaterials'>
+                                        <img src="./images/paint/flesh.jpg" alt="material_1">
+                                    </div>
+                                </div>                                
+                            </li>
+                            <li class='StepList_Item'>
+                                <div class='StepList__Summary'>
+                                    <span class='StepList__Number'>3</span>
+                                    <div class='StepList__Data'>
+                                        <p class='StepList__Name'>Primeras luces</p>
+                                        <span class='StepList__Time'>20'</span>
+                                    </div>
                                 </div>
                             </li>
-                            <li class='StepList__Step'>
-                                <span class='StepList__Number'>3</span>
-                                <div class='StepList__Data'>
-                                    <p class='StepList__Name'>Primeras luces</p>
-                                    <span class='StepList__Time'>20'</span>
+                            <li class='StepList_Item'>
+                                <div class='StepList__Summary'>
+                                    <span class='StepList__Number'>4</span>
+                                    <div class='StepList__Data'>
+                                        <p class='StepList__Name'>Detalles</p>
+                                        <span class='StepList__Time'>60'</span>
+                                    </div>
                                 </div>
                             </li>
-                            <li class='StepList__Step'>
-                                <span class='StepList__Number'>4</span>
-                                <div class='StepList__Data'>
-                                    <p class='StepList__Name'>Detalles</p>
-                                    <span class='StepList__Time'>60'</span>
+                            <li class='StepList_Item'>
+                                <div class='StepList__Summary'>
+                                    <span class='StepList__Number'>5</span>
+                                    <div class='StepList__Data'>
+                                        <p class='StepList__Name'>Pigmentos</p>
+                                        <span class='StepList__Time'>30'</span>
+                                    </div>
                                 </div>
                             </li>
-                            <li class='StepList__Step'>
-                                <span class='StepList__Number'>5</span>
-                                <div class='StepList__Data'>
-                                    <p class='StepList__Name'>Pigmentos</p>
-                                    <span class='StepList__Time'>30'</span>
-                                </div>
-                            </li>
-                            <li class='StepList__Step'>
-                                <span class='StepList__Number'>5</span>
-                                <div class='StepList__Data'>
-                                    <p class='StepList__Name'>Barnizado</p>
-                                    <span class='StepList__Time'>30'</span>
+                            <li class='StepList_Item'>
+                                <div class='StepList__Summary'>
+                                    <span class='StepList__Number'>5</span>
+                                    <div class='StepList__Data'>
+                                        <p class='StepList__Name'>Barnizado</p>
+                                        <span class='StepList__Time'>30'</span>
+                                    </div>
                                 </div>
                             </li>
                         </ol>

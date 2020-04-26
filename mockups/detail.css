@@ -1,3 +1,37 @@
+.DetailWork__Progress {
+    position: relative;
+}
+
+.DetailWork__Progress span {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    color: white;
+    font-size: .75rem !important;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;    
+}
+
+progress[value]::-webkit-progress-value {
+    background-image:
+        -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%),
+        -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
+        -webkit-linear-gradient(left, #09c, #f44);    
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
 .MainPanel__Main {
     display: flex;
     justify-content: center;
@@ -96,13 +130,28 @@
     padding: 2rem;
 }
 
-.StepList__Step {
+.StepList_Item {
+    margin-bottom: 1.5rem;    
+    cursor: pointer;
+}
+
+.StepList_Item--active {
+    margin-bottom: 0;    
+}
+
+.StepList__Summary {
     height: 45px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 1.5rem;
+}
+
+.StepList__StepDetail {
+    display: flex;
+    flex-direction: row;
+    font-size: .9rem;
+    padding: 2rem 2.5rem;
 }
 
 .StepList .StepList__Number {
@@ -129,13 +178,34 @@
     flex-grow: 1;
 }
 
-.StepList__Step:hover .StepList__Data {
+.StepList__Summary:hover .StepList__Data,
+.StepList_Item--active .StepList__Data {
     background-color: #324456;
     color: white;
 }
 
-.StepList__Step:hover .StepList__Number {
+.StepList__Summary:hover .StepList__Number,
+.StepList_Item--active .StepList__Number {
     background-color: #1ABB9C;
+}
+
+.StepList__StepDescription {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.StepList__StepDescription img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+.StepList__StepDescriptionAndList {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .DetailWork__Gallery {
@@ -143,7 +213,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     height: 300px;
     width: 100%;
     overflow-x: auto;
@@ -153,4 +222,30 @@
     height: 225px;
     width: 225px;
     margin-right: 15px;
+}
+
+.StepList__ImportantActions {
+    padding: 0 1rem;
+}
+
+.StepList__ImportantActions li {
+    margin: 1rem 0;
+}
+
+.StepList__ImportantActions li i {
+    margin-right: .75rem;
+    width: 22px;
+}
+
+.StepList__StepMaterials {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding: 0 1rem;
+    justify-self: flex-end;
+}
+
+.StepList__StepMaterials img {
+    width: 240px;
+    height: 240px;
 }
