@@ -6,6 +6,7 @@ import { SnackbarProvider } from "notistack";
 // Components
 import App from "./containers/App";
 // Own modules
+import './utils/i18n';
 // Assets
 // CSS
 import "./index.css";

@@ -32,7 +32,7 @@
         }
     },
     "rules": {
-        "react/jsx-filename-extension": "off",
+        "react/jsx-filename-extension": "on",
         "unicorn/filename-case": "off"
     }
 }

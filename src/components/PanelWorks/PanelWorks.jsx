@@ -15,6 +15,7 @@ export default function PanelWorks(props) {
     // Render
     return (
         <div>
+            <h1>Hola Mundo</h1>
         </div>
     );
 }
