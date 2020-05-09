@@ -1,0 +1,2 @@
+// UI
+export const COLLAPSE_DRAWER = 'COLLAPSE_DRAWER'

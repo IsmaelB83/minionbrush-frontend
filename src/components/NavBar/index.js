@@ -2,7 +2,7 @@
 import { connect } from 'react-redux';
 import { withSnackbar } from "notistack";
 // Components
-import Home from "./Home";
+import NavBar from "./NavBar";
 // Action Creators
 import { UiActions } from '../../store/GlobalActions';
 
@@ -27,4 +27,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 // Retorno el componente envuelto
-export default connect(mapStateToProps, mapDispatchToProps)(withSnackbar(Home));
+export default connect(mapStateToProps, mapDispatchToProps)(withSnackbar(NavBar));

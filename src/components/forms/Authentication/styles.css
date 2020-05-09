@@ -1,14 +1,23 @@
 .Login {
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: 
-        linear-gradient(to bottom, #37ff0f0c, #00000021),
-        url('../../../assets/images/wallpaper.jpg');
+    background-image: url('../../../assets/images/wallpaper.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Login::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .Login__Wrapper {
@@ -16,6 +25,7 @@
     padding: 2.5rem 2rem;
     background-color: white;
     box-shadow: 3px 4px 10px rgba(0, 0, 0, .5);
+    z-index: 5;
 }
 
 .Login__Form {

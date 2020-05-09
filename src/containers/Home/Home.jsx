@@ -1,23 +1,27 @@
 // NPM Modules
-import React from "react";
+import React from 'react';
 // Material UI
+import CssBaseline from '@material-ui/core/CssBaseline';
 // Components
-import SidePanel from "../../components/SidePanel";
-import PanelWorks from "../../components/PanelWorks";
+import NavBar from '../../components/NavBar';
+import SideMenu from '../../components/SideMenu';
+import ContentPanel from '../../components/ContentPanel';
 // Containers
 // Own modules
 // Models
 // Assets
 // CSS
+import './styles.css'
 
-// Home Root Component
-export default function Home() {
-    // Render
+
+export default function Home(props) {
+  
     return (
-        <div className="Home">
-            <SidePanel/>
-            <PanelWorks/>
+        <div className='Home'>
+            <CssBaseline />
+            <NavBar/>
+            <SideMenu/>
+            <ContentPanel/>
         </div>
     );
 }
-    

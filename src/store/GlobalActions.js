@@ -1,4 +1,5 @@
-/* import * as WorksActions from './actions/WorksActions'; */
+import * as UiActions from './actions/UiActions';
 
 export {
+    UiActions
 }
